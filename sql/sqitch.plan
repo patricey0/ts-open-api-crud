@@ -1,0 +1,6 @@
+%syntax-version=1.0.0
+%project=ts-open-api-crud
+
+init 2022-03-14T13:47:08Z ,,, <patricey0@EDITH-Master> # DB init
+createPlayer_function 2022-03-14T13:54:47Z patricey0 <patrice.yolle@gmail.com> # function to create player in DB
+updateScore_function 2022-03-15T07:52:37Z patricey0 <patrice.yolle@gmail.com> # function to update the best score for one player by id

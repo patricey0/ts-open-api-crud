@@ -1,0 +1,31 @@
+@protocol=http://
+@host=localhost
+@port=:1337
+@baseUrl={{protocol}}{{host}}{{port}}
+
+### Test get all players
+GET {{baseUrl}}/players HTTP/1.1
+
+### Test get one player
+GET {{baseUrl}}/player/1 HTTP/1.1
+
+
+### Test create player
+POST {{baseUrl}}/player/create HTTP/1.1
+content-type: application/json
+
+{
+    "pseudo": "patricey2", 
+    "password": "123qwe"
+}
+
+### Test updating score
+PATCH {{baseUrl}}/player/2/update/score HTTP/1.1
+content-type: application/json
+
+{
+    "score" : 15
+}
+
+### Test delete user
+DELETE {{baseUrl}}/player/2 HTTP/1.1
