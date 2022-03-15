@@ -2,7 +2,7 @@
 import {Pool} from "pg";
 
 //using url string for connection
-const config = {
+const config: any = {
     connectionString: process.env.DATABASE_URL,
 };
 
