@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": { "node": "17.7.1"},
   "scripts": {
     "postinstall": "tsc",
     "dev": "tsc -w & nodemon dist/index.js",
